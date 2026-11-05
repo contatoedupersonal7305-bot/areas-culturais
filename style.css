@@ -4,4 +4,102 @@
     box-sizing: border-box;
 }
 
+.painel-interativo {
+    background-color: #595959; /* Fundo cinzento escuro */
+    color: white;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
 
+.cabecalho-painel h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.cabecalho-painel h1 {
+    margin: 0 0 15px 0;
+    font-size: 2.5rem;
+}
+
+.introducao {
+    background-color: rgba(92, 133, 166, 0.2); /* Destaque ligeiro como no esboço */
+    padding: 10px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    border-radius: 4px;
+}
+
+/* Flexbox para colocar texto à esquerda e imagem à direita */
+.conteudo-painel {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.texto-esquerdo {
+    flex: 1; /* Ocupa 50% do espaço */
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.imagem-direita {
+    flex: 1; /* Ocupa os outros 50% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagem-dinamica {
+    width: 100%;
+    height: 250px;
+    background-color: #d9d9d9; /* Cor de fundo caso a imagem falhe */
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Pontos de navegação */
+.pontos-navegacao {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #b3b3b3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ponto.ativo {
+    background-color: #c9302c; /* Cor vermelha do ponto ativo */
+}
+
+/* Botão Seguinte */
+.btn-seguinte {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.btn-seguinte:hover {
+    background-color: #e6e6e6;
+}

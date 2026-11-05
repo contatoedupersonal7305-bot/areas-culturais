@@ -14,8 +14,93 @@
                 <img src="menu.svg" alt="">
                 <img src="image 1.jpg" alt="">
                 <img src="search-normal.svg" alt="">
+            <div class="barra_vermelha_2"></div>
             </div>
         </header>
+        <main>
+            <div class="areas_culturais">
+                <h2>Escola legal - Jandira</h2>
+                <h1>Áreas Culturais</h1>
+                <p>Na nossa unidade oferecemos areas de lazer aos <br> alunos com capacidade para suportar todos os <br> estudantes e garantir que os jovens tenham acesso a <br> cultura e lazer de qualidade em um ambiente <br> preparado e organizado</p>
+                <div class="painel-interativo">
+                    <!-- Cabeçalho -->
+                    <header class="cabecalho-painel">
+                        <h3>Escola legal - Jandira</h3>
+                        <h1>Áreas Culturais</h1>
+                        <p class="introducao">Na nossa unidade oferecemos areas de lazer aos alunos com capacidade para suportar todos os estudantes e garantir que os jovens tenham acesso a cultura e lazer de qualidade em um ambiente preparado e organizado</p>
+                    </header>
+                
+                    <!-- Área de Conteúdo (Texto + Imagem) -->
+                    <div class="conteudo-painel">
+                        <div class="texto-esquerdo">
+                            <p id="texto-dinamico">texto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto texto textotexto</p>
+                        </div>
+                        
+                        <div class="imagem-direita">
+                            <img id="imagem-dinamica" src="foto_biblioteca.jpg" alt="Área Cultural">
+                            
+                            <!-- Pontos indicadores -->
+                            <div class="pontos-navegacao">
+                                <span class="ponto ativo" onclick="mudarPara(0)"></span>
+                                <span class="ponto" onclick="mudarPara(1)"></span>
+                                <span class="ponto" onclick="mudarPara(2)"></span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Botão Seguinte -->
+                    <button class="btn-seguinte" onclick="avancar()">❯</button>
+                </div>
+                
+                <!-- O script que faz a troca de conteúdo -->
+                <script>
+                    const conteudos = [
+                        {
+                            texto: "A nossa biblioteca tem um ambiente confortável e preparado para os seus estudos e momentos de leitura.",
+                            imagem: "foto_biblioteca.jpg"
+                        },
+                        {
+                            texto: "A nossa quadra tem um espaço amplo e seguro para a prática de vários desportos e atividades físicas.",
+                            imagem: "foto_quadra.jpg"
+                        },
+                        {
+                            texto: "Descrição da terceira área cultural. O texto adapta-se ao espaço disponível do lado esquerdo.",
+                            imagem: "sua-imagem-3.jpg"
+                        }
+                    ];
+                
+                    let indiceAtual = 0;
+                
+                    function atualizarPainel() {
+                        document.getElementById('texto-dinamico').textContent = conteudos[indiceAtual].texto;
+                        document.getElementById('imagem-dinamica').src = conteudos[indiceAtual].imagem;
+                        
+                        // Atualizar a cor dos pontos
+                        const pontos = document.querySelectorAll('.ponto');
+                        pontos.forEach((ponto, index) => {
+                            if (index === indiceAtual) {
+                                ponto.classList.add('ativo');
+                            } else {
+                                ponto.classList.remove('ativo');
+                            }
+                        });
+                    }
+                
+                    function mudarPara(indice) {
+                        indiceAtual = indice;
+                        atualizarPainel();
+                    }
+                
+                    function avancar() {
+                        indiceAtual++;
+                        if (indiceAtual >= conteudos.length) {
+                            indiceAtual = 0; // Volta ao início se passar do último
+                        }
+                        atualizarPainel();
+                    }
+                </script>
+            </div>
+        </main>
     </section>
     <section>
 
