@@ -4,15 +4,67 @@
     box-sizing: border-box;
 }
 
+.header_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 20px;
+}
+.menu{
+    display: flex;
+    gap: 105px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_menu{
+    height: 40px;
+}
+
+.logo_senai{
+    height: 40px;
+}
+
+.logo_busca{
+    height: 40px;
+}
+
+.barra_vermelha{
+    display: flex;
+    background-color: red;
+    height: 50px;
+    width: 100vw
+}
+
+.barra_vermelha_2{
+    display: flex;
+    background-color: red;
+    height: 5px;
+    width: 450px
+}
+
+.vazio{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    text-decoration: underline;
+}
+
 .painel-interativo {
     background-color: #595959; /* Fundo cinzento escuro */
     color: white;
     padding: 30px;
     font-family: Arial, sans-serif;
     position: relative;
+    width: 90%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 8px;
+    height: 580px;
 }
 
 .cabecalho-painel h3 {
@@ -41,9 +93,11 @@
 }
 
 .texto-esquerdo {
-    flex: 1; /* Ocupa 50% do espaço */
+    flex: 1;
     line-height: 1.5;
     font-weight: bold;
+    height: 250px; /* Trava a altura do texto no mesmo tamanho da imagem */
+    /* Se o texto for muito grande, você pode adicionar: overflow-y: auto; para criar uma barra de rolagem só no texto */
 }
 
 .imagem-direita {
