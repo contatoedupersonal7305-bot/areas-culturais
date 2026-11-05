@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header_header{
+.header_header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,40 +12,41 @@
     width: 100vw;
     gap: 20px;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 105px;
     align-items: center;
     justify-content: center;
 }
 
-.logo_menu{
+.logo_menu {
     height: 40px;
 }
 
-.logo_senai{
+.logo_senai {
     height: 40px;
 }
 
-.logo_busca{
+.logo_busca {
     height: 40px;
 }
 
-.barra_vermelha{
+.barra_vermelha {
     display: flex;
     background-color: red;
     height: 50px;
-    width: 100vw
+    width: 100vw;
 }
 
-.barra_vermelha_2{
+.barra_vermelha_2 {
     display: flex;
     background-color: red;
     height: 5px;
-    width: 450px
+    width: 450px;
 }
 
-.vazio{
+.vazio {
     display: flex;
     height: 80px;
     align-items: center;
@@ -55,7 +56,7 @@
 }
 
 .painel-interativo {
-    background-color: #595959; /* Fundo cinzento escuro */
+    background-color: #595959;
     color: white;
     padding: 30px;
     font-family: Arial, sans-serif;
@@ -78,14 +79,13 @@
 }
 
 .introducao {
-    background-color: rgba(92, 133, 166, 0.2); /* Destaque ligeiro como no esboço */
+    background-color: rgba(92, 133, 166, 0.2);
     padding: 10px;
     margin-bottom: 30px;
     line-height: 1.4;
     border-radius: 4px;
 }
 
-/* Flexbox para colocar texto à esquerda e imagem à direita */
 .conteudo-painel {
     display: flex;
     gap: 30px;
@@ -96,12 +96,11 @@
     flex: 1;
     line-height: 1.5;
     font-weight: bold;
-    height: 250px; /* Trava a altura do texto no mesmo tamanho da imagem */
-    /* Se o texto for muito grande, você pode adicionar: overflow-y: auto; para criar uma barra de rolagem só no texto */
+    height: 250px;
 }
 
 .imagem-direita {
-    flex: 1; /* Ocupa os outros 50% */
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,12 +109,11 @@
 #imagem-dinamica {
     width: 100%;
     height: 250px;
-    background-color: #d9d9d9; /* Cor de fundo caso a imagem falhe */
+    background-color: #d9d9d9;
     border-radius: 15px;
     object-fit: cover;
 }
 
-/* Pontos de navegação */
 .pontos-navegacao {
     display: flex;
     gap: 10px;
@@ -132,10 +130,9 @@
 }
 
 .ponto.ativo {
-    background-color: #c9302c; /* Cor vermelha do ponto ativo */
+    background-color: #c9302c;
 }
 
-/* Botão Seguinte */
 .btn-seguinte {
     position: absolute;
     bottom: 20px;
@@ -158,37 +155,31 @@
     background-color: #e6e6e6;
 }
 
-
-/*configuração da side bar*/
-
-/* Botão do menu no cabeçalho */
+/* Configuração da Sidebar */
 .btn-menu {
     font-size: 30px;
     cursor: pointer;
     background: none;
     border: none;
-    color: #333; /* Cor das listras */
+    color: #333;
 }
 
-/* A estrutura principal da Sidebar */
 .sidebar {
-    height: 100vh; /* Ocupa 100% da altura da tela */
-    width: 280px; /* Largura do menu */
-    position: fixed; /* Fica fixa por cima de tudo */
+    height: 100vh;
+    width: 280px;
+    position: fixed;
     top: 0;
-    left: -280px; /* Esconde a sidebar fora da tela, à esquerda */
-    background-color: #ff0000; /* Cor vermelha do SENAI */
-    transition: left 0.3s ease; /* Cria o efeito suave de deslizar */
-    z-index: 1000; /* Garante que fique por cima de todos os outros elementos do site */
+    left: -280px;
+    background-color: #ff0000;
+    transition: left 0.3s ease;
+    z-index: 1000;
     padding-top: 20px;
 }
 
-/* Classe que será adicionada pelo JavaScript para abrir o menu */
 .sidebar.aberta {
-    left: 0; /* Traz a sidebar para dentro da tela */
+    left: 0;
 }
 
-/* Estilo do botão "X" para fechar */
 .btn-fechar {
     position: absolute;
     top: 15px;
@@ -200,17 +191,16 @@
     cursor: pointer;
 }
 
-/* Estilo do logo dentro do menu */
 .logo-menu {
     padding: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 20px;
 }
+
 .logo-menu img {
-    max-width: 100%; /* Ajuste a imagem para caber no espaço */
+    max-width: 100%;
 }
 
-/* Estilo dos links de navegação */
 .links-menu a {
     padding: 15px 20px;
     text-decoration: none;
@@ -222,5 +212,69 @@
 }
 
 .links-menu a:hover {
-    background-color: #cc0000; /* Fica um vermelho um pouco mais escuro ao passar o rato */
+    background-color: #cc0000;
+}
+
+/* Configuração da Barra de Pesquisa */
+.caixa-busca {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: top 0.3s ease;
+    z-index: 999;
+    padding: 15px 0;
+}
+
+.caixa-busca.aberta {
+    top: 0;
+}
+
+.conteudo-busca {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.conteudo-busca input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    outline: none;
+    color: #333;
+}
+
+.conteudo-busca input:focus {
+    border-color: #ff0000;
+}
+
+.btn-pesquisar {
+    padding: 12px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-pesquisar:hover {
+    background-color: #cc0000;
+}
+
+.btn-fechar-busca {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #666;
+    cursor: pointer;
+    padding: 0 10px;
 }
