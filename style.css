@@ -157,3 +157,70 @@
 .btn-seguinte:hover {
     background-color: #e6e6e6;
 }
+
+
+/*configuração da side bar*/
+
+/* Botão do menu no cabeçalho */
+.btn-menu {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333; /* Cor das listras */
+}
+
+/* A estrutura principal da Sidebar */
+.sidebar {
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    width: 280px; /* Largura do menu */
+    position: fixed; /* Fica fixa por cima de tudo */
+    top: 0;
+    left: -280px; /* Esconde a sidebar fora da tela, à esquerda */
+    background-color: #ff0000; /* Cor vermelha do SENAI */
+    transition: left 0.3s ease; /* Cria o efeito suave de deslizar */
+    z-index: 1000; /* Garante que fique por cima de todos os outros elementos do site */
+    padding-top: 20px;
+}
+
+/* Classe que será adicionada pelo JavaScript para abrir o menu */
+.sidebar.aberta {
+    left: 0; /* Traz a sidebar para dentro da tela */
+}
+
+/* Estilo do botão "X" para fechar */
+.btn-fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo do logo dentro do menu */
+.logo-menu {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+}
+.logo-menu img {
+    max-width: 100%; /* Ajuste a imagem para caber no espaço */
+}
+
+/* Estilo dos links de navegação */
+.links-menu a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.links-menu a:hover {
+    background-color: #cc0000; /* Fica um vermelho um pouco mais escuro ao passar o rato */
+}
