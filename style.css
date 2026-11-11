@@ -413,3 +413,36 @@
     height: 100px;
     width: 300px;
 }
+
+.caixa3{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    height: 400px;
+    width: 330px;
+    color: white;
+    border-radius: 25px;
+}
+
+.caixa3 h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.imagens_caixa3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imagem6, .imagem7{
+    height: 350px;
+    width: 150px;
+}
+
+.imagens_caixa3 h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
