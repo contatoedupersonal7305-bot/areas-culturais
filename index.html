@@ -23,7 +23,6 @@
                 </div>
             </div>
 
-            <!-- Sidebar (Menu Lateral) -->
             <div id="minhaSidebar" class="sidebar">
                 <button class="btn-fechar" onclick="abrirFecharMenu()">×</button>
                 <div class="logo-menu">
@@ -36,7 +35,6 @@
                 </nav>
             </div>
 
-            <!-- Caixa de Busca Suspensa -->
             <div id="caixaBusca" class="caixa-busca">
                 <div class="conteudo-busca">
                     <input type="text" id="campoPesquisa" placeholder="O que você procura? (ex: Biblioteca, Quadra...)">
@@ -83,9 +81,7 @@
         </main>
     </section>
 
-    <!-- Script de Controle dos Componentes -->
     <script>
-        // Lógica do Painel Interativo
         const conteudos = [
             {
                 texto: "A nossa biblioteca tem um ambiente confortável e preparado para os seus estudos e momentos de leitura.",
@@ -130,15 +126,25 @@
             atualizarPainel();
         }
 
-        // Lógica da Sidebar (Menu Lateral)
         function abrirFecharMenu() {
             var menu = document.getElementById("minhaSidebar");
+            var caixaBusca = document.getElementById("caixaBusca");
+
+            if (!menu.classList.contains("aberta")) {
+                caixaBusca.classList.remove("aberta");
+            }
+
             menu.classList.toggle("aberta");
         }
 
-        // Lógica da Barra de Busca
         function abrirFecharBusca() {
             var caixa = document.getElementById("caixaBusca");
+            var menu = document.getElementById("minhaSidebar");
+
+            if (!caixa.classList.contains("aberta")) {
+                menu.classList.remove("aberta");
+            }
+
             caixa.classList.toggle("aberta");
 
             if (caixa.classList.contains("aberta")) {

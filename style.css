@@ -156,7 +156,6 @@
     background-color: #e6e6e6;
 }
 
-/* Configuração da Sidebar */
 .btn-menu {
     font-size: 30px;
     cursor: pointer;
@@ -216,7 +215,6 @@
     background-color: #cc0000;
 }
 
-/* Configuração da Barra de Pesquisa */
 .caixa-busca {
     position: fixed;
     top: -100px;
