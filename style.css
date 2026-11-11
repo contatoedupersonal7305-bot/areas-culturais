@@ -277,3 +277,48 @@
     cursor: pointer;
     padding: 0 10px;
 }
+
+.secao2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.campeonatos_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: red;
+}
+
+.caixa1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border-radius: 16px;
+    height: 350px;
+    width: 350px;
+}
+
+.caixa1 p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    height: 100px;
+    width: 300px;
+}
+
+.imagens_caixa1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
