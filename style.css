@@ -559,6 +559,233 @@ footer h1, h2, p{
     margin-left: 20px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+   .header_header {
+       width: 100%;
+       background-color: #fff;
+   }
+
+
+   .barra_vermelha{
+       height: 45px;
+       background-color: red;
+       width: 100%;
+   }
+  
+   .barra_vermelha_2{
+       height: 6px;
+       background-color: red;
+       width: 100%;
+   }
+
+
+   .menu {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px 40px;
+       width: 100%;
+   }
+
+
+   .btn-menu {
+       background: none;
+       border: none;
+       font-size: 1.8rem;
+       color: var(--vermelho-senai);
+       cursor: pointer;
+   }
+
+
+   .logo_senai {
+       height: 35px;
+       object-fit: contain;
+   }
+
+
+   .logo_busca {
+       height: 28px;
+       width: 28px;
+   }
+
+
+   .sidebar {
+       position: fixed;
+       top: 0;
+       left: -350px;
+       width: 320px;
+       height: 100vh;
+       background-color: var(--vermelho-senai);
+       color: white;
+       box-shadow: 4px 0 15px rgba(0, 0, 0, 0.4);
+       transition: left 0.3s ease;
+       z-index: 1000;
+       padding: 30px 25px;
+       display: flex;
+       flex-direction: column;
+   }
+}
+/* Seção Campeonatos */
+.campeonatos-container {
+   width: 90%;
+   max-width: 800px;
+   margin: 30px auto;
+}
+
+
+.titulo-campeonatos {
+   color: red;
+   text-align: center;
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
+
+
+.card-red {
+   background-color: red;
+   color: white;
+   border-radius: 15px;
+   padding: 15px;
+   margin-bottom: 20px;
+}
+
+
+.fotos-row {
+   display: flex;
+   gap: 8px;
+   margin-bottom: 10px;
+}
+
+
+.fotos-row img {
+   width: 33%;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 8px;
+   background-color: #ccc;
+}
+
+
+.card-red p {
+   font-size: 0.9rem;
+}
+
+
+/* Troféus */
+.trofeus-card {
+   text-align: center;
+}
+
+
+.trofeus-card h2 {
+   margin-bottom: 20px;
+}
+
+
+.trofeus-row {
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end;
+}
+
+
+.trofeus-row img {
+   height: 180px;
+   margin-bottom: 10px;
+}
+
+
+.trofeus-row p {
+   font-size: 0.85rem;
+}
+
+
+/* Secção Escura */
+.instrumentos-container {
+   background-color: #1a1a1a;
+   color: white;
+   padding: 30px 20px;
+}
+
+
+.instrumentos-container small {
+   color: red;
+   font-weight: bold;
+}
+
+
+.instrumentos-container h2 {
+   color: red;
+   margin-bottom: 20px;
+   border-bottom: 2px solid red;
+   display: inline-block;
+}
+
+
+.instrumentos-row {
+   display: flex;
+   gap: 15px;
+}
+
+
+.box-grande { flex: 2; }
+.box-pequena { flex: 1; }
+
+
+.foto-cinza {
+   background-color: #ccc;
+   height: 140px;
+   margin-bottom: 10px;
+}
+
+
+.instrumentos-row p {
+   font-size: 0.8rem;
+   word-break: break-all;
+}
+
+
+.footer-red {
+   background-color: red;
+   color: white;
+   padding: 20px;
+}
+
+
+.footer-red h2 {
+   margin-bottom: 10px;
+}
+
+
+.footer-grid {
+   display: flex;
+   justify-content: space-between;
+   font-size: 0.85rem;
+   margin-bottom: 15px;
+}
+
+
+.text-right {
+   text-align: right;
+}
+
+
+.contato-info {
+   font-size: 0.85rem;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+
+.copy {
+   text-align: center;
+   font-size: 0.75rem;
+}
+
+
+
 @media(min-width:1440px){
     .menu{
         display: none;
