@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <section id="inicio">
         <header class="header_header">
             <div class="barra_vermelha"></div>
             
@@ -48,9 +48,10 @@
                     <img src="imagens/image 3.png" alt="SENAI Educação Online">
                 </div>
                 <nav class="links-menu">
-                    <a href="#">Áreas Culturais</a>
-                    <a href="#">Campeonatos</a>
-                    <a href="#">Instrumentos Culturais</a>
+                    <!-- Cada link aponta para um ID e fecha o menu ao clicar -->
+                    <a href="#inicio" onclick="abrirFecharMenu()">Áreas Culturais</a>
+                    <a href="#campeonatos" onclick="abrirFecharMenu()">Campeonatos</a>
+                    <a href="#instrumentos" onclick="abrirFecharMenu()">Instrumentos Culturais</a>
                 </nav>
             </div>
 
@@ -100,7 +101,7 @@
         </main>
     </section>
     <div class="vazio2"></div>
-    <section class="secao2">
+    <section class="secao2" id="campeonatos">
         <h1 class="campeonatos_titulo">CAMPEONATOS</h1>
         <div class="vazio2"></div>
         <div class="caixa1">
@@ -146,9 +147,53 @@
             </div>
         </div>
     </section>
+    <div class="vazio2"></div>
+    <section class="secao-instrumentos" id="instrumentos">
+        <div class="cabecalho-secao">
+            <h3>Escola Legal - Jandira</h3>
+            <h1>Instrumentos Culturais</h1>
+        </div>
 
+        <div class="carrossel-blocos">
+            
+            <!-- Container 1: Xadrez -->
+            <div class="bloco-card">
+                <div class="imagem-placeholder">
+                    <img src="imagens/foto_xadrez.jpg" alt="Xadrez">
+                </div>
+                <h2>Xadrez</h2>
+                <p>Jogo de estratégia milenar que estimula o raciocínio lógico, a tomada de decisões rápidas e a concentração. Disponível na área de convivência para partidas livres e torneios internos.</p>
+            </div>
 
+            <!-- Container 2: Violão -->
+            <div class="bloco-card">
+                <div class="imagem-placeholder">
+                    <img src="imagens/foto_violao.jpg" alt="Violão">
+                </div>
+                <h2>Violão</h2>
+                <p>Um dos instrumentos musicais mais populares do nosso espaço cultural, incentivando a expressão artística, o trabalho em equipe e apresentações musicais durante os eventos da escola.</p>
+            </div>
 
+            <!-- Container 3: Dominó -->
+            <div class="bloco-card">
+                <div class="imagem-placeholder">
+                    <img src="imagens/foto_domino.jpg" alt="Dominó">
+                </div>
+                <h2>Dominó</h2>
+                <p>Excelente opção para momentos de lazer e descontração nos intervalos. Promove a socialização entre os alunos e o desenvolvimento do raciocínio matemático rápido.</p>
+            </div>
+
+            <!-- Container 4: Quebra-Cabeça -->
+            <div class="bloco-card">
+                <div class="imagem-placeholder">
+                    <img src="imagens/foto_qbcbc.jpg" alt="Quebra-Cabeça">
+                </div>
+                <h2>Quebra-Cabeça</h2>
+                <p>Atividade colaborativa focada em paciência, percepção visual e resolução de problemas. Os modelos ficam disponíveis para montagem coletiva durante as oficinas culturais.</p>
+            </div>
+
+        </div>
+    </section>
     <script>
         const conteudos = [
             {
