@@ -836,3 +836,143 @@ footer h1, h2, p{
         
     }
 }
+
+@media(min-width:1440px){
+   .menu,.barra_vermelha{
+       display: none;
+   }
+   #NavbarDesktop{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       padding: 32px;
+     
+   }
+
+
+   #NavbarDesktop > img{
+       width: 225px;
+       margin-right: 48px;
+   }
+
+   .secao2{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-self: center;
+       
+
+
+   #NavbarDesktop ol{
+       list-style-type: none;
+       display: flex;
+       gap: 24px;
+       color:#f00;
+       font-size: 32px;
+       justify-content: center;
+       align-items: center;
+   }
+
+
+   #NavbarDesktop li:hover{
+       text-decoration: underline;
+   }
+   #NavbarDesktop div{
+       width: 350px;
+       height: 65px;
+       background-color: #d9d9d9;
+       border-radius: 120px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+
+   #NavbarDesktop div p{
+       margin-left: 90px;
+       font-size: 32px;
+       color: #595959;
+      
+   }
+   #NavbarDesktop div p{
+       margin-left: 90px;
+       font-size: 32px;
+       color: #595959;
+      
+   }
+
+
+   .vazio{
+       font-size: 32px;
+   }
+
+
+   .campeonatos_titulo{
+       font-size: 64px;
+       text-decoration: underline;
+       margin-bottom: 32px;
+   }
+
+
+   .painel-interativo{
+       max-width: 1440px;
+       width:1376px;
+   }
+
+
+   #imagem-dinamica{
+       height: 300px;
+       width: 580px;
+   }
+
+
+   .vazio2{
+       display: none;
+   }
+
+
+   .caixa-main{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 1376px;
+       gap: 32px;
+       align-items: center;
+   }
+
+
+   .caixa-main > div{
+       height: 400px;
+   }
+
+
+   .caixa1{
+       width: 600px;
+       text-align: center;
+   }
+
+
+   .caixa1 img{
+       width: 264px;
+       height: 220px;
+   }
+   .caixa1 p{
+       width: 500px;
+      
+   }
+
+
+   .caixa2{
+       margin: 0;
+       max-width: 1200px;
+       width: 776px;
+   }
+   #imagem-carrossel-2{
+    width: 600px;
+    height: 250px;
+   }
+
+
+}
+
+}
