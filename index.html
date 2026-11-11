@@ -80,10 +80,10 @@
             </div>
         </main>
     </section>
-    <div class="vazio"></div>
+    <div class="vazio2"></div>
     <section class="secao2">
         <h1 class="campeonatos_titulo">CAMPEONATOS</h1>
-        <div class="vazio"></div>
+        <div class="vazio2"></div>
         <div class="caixa1">
             <div class="imagens_caixa1">
                 <div class="imagem1">
@@ -95,21 +95,21 @@
             </div>
             <p>Sediamos a COPA Escolas legais de Jandira, <br> um evento histórico que uniu talento e paixão <br> esportiva.</p>
         </div>
+        <div class="vazio2"></div>
         <div class="caixa2">
-            <div class="imagens_caixa2">
-                <div class="imagem3">
-                    <img src="imagens/foto_pingpong.png" alt="Campeonato">
-                </div>
-                <div class="imagem4">
-                    <img src="imagens/foto_futsal.png" alt="Campeonato">
-                </div>
-                <div class="imagem5">
-                    <img src="imagens/jogo_basquete.jpeg" alt="Campeonato">
-                </div>
+            <h3>CAMPEONATOS</h3>
+            <h1>INTERCLASSE</h1>
+            
+            <div class="carrossel-container">
+                <img class="borda-arredondada" id="imagem-carrossel-2" src="imagens/foto_pingpong.png" alt="Campeonato Interclasse">
+                
+                <button class="btn-carrossel-voltar" onclick="voltarCarrossel2()">❮</button>
+                <button class="btn-carrossel-avancar" onclick="avancarCarrossel2()">❯</button>
             </div>
-            <p>O INTERCLASSE surgiu para expandir a <br> competição com novas modalidades e novas <br> conquistas</p>
-        </div>
 
+            <p id="texto-carrossel-2">O INTERCLASSE surgiu para expandir a competição com novas modalidades e novas conquistas</p>
+        </div>
+        <div class="vazio2"></div>
         <div class="caixa3">
             <h1>CONQUISTAS & TROFÉUS</h1>
             <div class="imagens_caixa3">
@@ -201,6 +201,35 @@
                 }, 300);
             }
         }
+    const imagensInterclasse = [
+        "imagens/foto_pingpong.png",
+        "imagens/foto_futsal.png",
+        "imagens/jogo_basquete.jpeg"
+    ];
+
+    let indiceCarrossel2 = 0;
+
+    function atualizarCarrossel2() {
+        const imgElement = document.getElementById('imagem-carrossel-2');
+        imgElement.src = imagensInterclasse[indiceCarrossel2];
+    }
+
+    function avancarCarrossel2() {
+        indiceCarrossel2++;
+        if (indiceCarrossel2 >= imagensInterclasse.length) {
+            indiceCarrossel2 = 0; 
+        }
+        atualizarCarrossel2();
+    }
+
+    function voltarCarrossel2() {
+        indiceCarrossel2--;
+        if (indiceCarrossel2 < 0) {
+            indiceCarrossel2 = imagensInterclasse.length - 1;
+        }
+        atualizarCarrossel2();
+    }
     </script>
+    
 </body>
 </html>
